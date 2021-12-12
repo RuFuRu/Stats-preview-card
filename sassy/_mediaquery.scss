@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 300px !important;
+		grid-template-columns: repeat(1, 1fr) !important;
+		grid-template-rows: repeat(3, 1fr);
+		transform: scale(0.8);
+		padding: 0 6rem 0 0;
+	}
+	.image {
+		grid-row: 1/2;
+		border-top-left-radius: 3%;
+		border-bottom-right-radius: 0 !important;
+	}
+	.card {
+		grid-row: 2/4;
+		border-bottom-right-radius: 3%;
+		border-top-left-radius: 0 !important;
+		padding: 3rem 4rem !important;
+		h1 {
+			font-size: 2rem !important;
+		}
+		.main-paragraph {
+			font-size: 1rem !important;
+		}
+		.sub-card {
+			column-gap: 20px;
+		}
+	}
+}

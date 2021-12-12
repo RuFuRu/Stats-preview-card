@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@media (max-width: 1200px) {
+  .container {
+    max-width: 300px !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr);
+    transform: scale(0.8);
+    padding: 0 6rem 0 0;
+  }
+
+  .image {
+    grid-row: 1/2;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .card {
+    grid-row: 2/4;
+    border-bottom-right-radius: 3%;
+    border-top-left-radius: 0 !important;
+    padding: 3rem 4rem !important;
+  }
+  .card h1 {
+    font-size: 2rem !important;
+  }
+  .card .main-paragraph {
+    font-size: 1rem !important;
+  }
+  .card .sub-card {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+body {
+  background-color: #090b1a;
+  font-family: "Lexend Deca", "sans-serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+.container {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  padding: 3rem 5rem;
+  background-color: #1b1938;
+  border-bottom-left-radius: 3%;
+  border-top-left-radius: 3%;
+}
+.card h1 {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-family: "Inter";
+}
+.card span {
+  color: #aa5cdb;
+}
+.card .main-paragraph {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 170%;
+  font-size: 1.05rem;
+}
+.card .sub-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.card .sub-card h2 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+.card .sub-card .stat-paragraph {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin: 0.3rem 0 0 0;
+}
+
+.image {
+  background-image: url(image-header-desktop.jpg);
+  background-size: cover;
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+}/*# sourceMappingURL=style.css.map */

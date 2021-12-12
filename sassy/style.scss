@@ -1,0 +1,64 @@
+@use './vars' as *;
+@use './fonts' as *;
+@use './mediaquery' as *;
+
+body {
+	background-color: $mainBackground;
+	font-family: 'Lexend Deca', 'sans-serif';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 98vh;
+}
+
+.container {
+	max-width: 1300px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+	padding: 3rem 5rem;
+	background-color: $cardBackground;
+	border-bottom-left-radius: 3%;
+	border-top-left-radius: 3%;
+	h1 {
+		color: $mainHeadingAndStats;
+		margin-bottom: 2rem;
+		font-size: 2.4rem;
+		font-family: 'Inter';
+	}
+	span {
+		color: $accent;
+	}
+	.main-paragraph {
+		color: $mainParagraph;
+		line-height: 170%;
+		font-size: 1.05rem;
+	}
+	.sub-card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 2rem;
+		margin-top: 5rem;
+		h2 {
+			color: $mainHeadingAndStats;
+			margin-bottom: 0;
+			font-size: 1.7rem;
+		}
+		.stat-paragraph {
+			color: $statHeadings;
+			font-family: 'Lexend Deca';
+			font-weight: 400;
+			margin: 0.3rem 0 0 0;
+		}
+	}
+}
+.image {
+	background-image: url(image-header-desktop.jpg);
+	background-size: cover;
+	background-color: $accent;
+	background-blend-mode: multiply;
+	border-top-right-radius: 3%;
+	border-bottom-right-radius: 3%;
+}
